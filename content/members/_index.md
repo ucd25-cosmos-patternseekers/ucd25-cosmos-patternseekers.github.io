@@ -14,7 +14,7 @@ title: "Members"
 }
 </style>
 
-Team A members
+Pattern Seekers members
 
 ---
 
