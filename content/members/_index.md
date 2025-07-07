@@ -18,7 +18,7 @@ Team A members
 
 ---
 
-### Snoopy
+### Colin Haine
 
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
@@ -41,7 +41,7 @@ Team A members
 
 ---
 
-### Woodstock
+### Aiden Yuan
 
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
@@ -64,7 +64,7 @@ Team A members
 
 ---
 
-## Charlie Brown
+## Wisdom Li
 
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
@@ -87,7 +87,7 @@ Team A members
 
 ---
 
-## Lucy Van Pelt
+## Linda Meng
 
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
@@ -110,8 +110,7 @@ Team A members
 
 ---
 
-## Sally Brown
-
+## Mohini Gune
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
   <img src="sally.jpeg"
