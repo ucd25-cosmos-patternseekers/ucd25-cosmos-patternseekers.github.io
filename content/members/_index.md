@@ -18,7 +18,7 @@ Team A members
 
 ---
 
-### Colin Haine
+## Colin Haine
 
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
@@ -41,7 +41,7 @@ Team A members
 
 ---
 
-### Aiden Yuan
+## Aiden Yuan
 
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
@@ -131,8 +131,6 @@ Team A members
 </div>
 
 ---
-
-## Snoopy (w/o photo)
 
 Snoopy is ...
 
