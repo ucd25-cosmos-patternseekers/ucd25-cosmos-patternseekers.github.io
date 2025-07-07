@@ -129,11 +129,3 @@ Team A members
   </div>
   
 </div>
-
----
-
-Snoopy is ...
-
-- AAA
-- BBB
-- CCC
