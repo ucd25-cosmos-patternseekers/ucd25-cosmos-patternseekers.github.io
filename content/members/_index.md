@@ -14,8 +14,7 @@ title: "Members"
 }
 </style>
 
-Pattern Seekers members branch test
-
+Pattern Seekers members
 ---
 
 ## Colin Haine
