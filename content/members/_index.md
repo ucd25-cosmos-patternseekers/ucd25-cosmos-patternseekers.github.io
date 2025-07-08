@@ -14,7 +14,7 @@ title: "Members"
 }
 </style>
 
-Pattern Seekers members test
+Pattern Seekers members
 
 ---
 
