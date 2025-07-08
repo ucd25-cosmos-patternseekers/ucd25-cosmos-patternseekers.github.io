@@ -14,7 +14,7 @@ title: "Members"
 }
 </style>
 
-Pattern Seekers member
+Pattern Seekers members
 ---
 
 ## Colin Haine
