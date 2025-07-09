@@ -7,6 +7,7 @@ params:
   defaultTheme: auto
   disableThemeToggle: true
   ShowToc: false
+  math: true
   profileMode:
     enabled: true
     title: "Team A"
@@ -20,14 +21,25 @@ menu:
   main:
     - identifier: Members
       name: Members
-      url: /members
+      url: /members/
       weight: 10
     - identifier: Project
       name: Project
       url: /project/
       weight: 20
-
+    - identifier: Example
+      name: Example
+      url: /example/
+      weight: 30
+      
 markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - $$
+            - $$
+        enable: true
