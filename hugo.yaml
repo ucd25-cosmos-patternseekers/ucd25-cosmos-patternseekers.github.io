@@ -23,14 +23,11 @@ menu:
       name: Members
       url: /members/
       weight: 10
-    - identifier: Project
-      name: Project
-      url: /project/
-      weight: 20
-    - identifier: Example
-      name: Example
-      url: /example/
-      weight: 30
+    - identifier: AQI project
+      name: AQI project
+      url: /airquality-income/
+      weight: 10
+      
 
       
 markup:
