@@ -1,6 +1,6 @@
 baseURL: 'ucd25-cosmos-patternseekers.github.io'
 languageCode: en-us
-title: "Team A"
+title: "Team 5"
 theme: "PaperMod"
 
 params:
@@ -10,11 +10,9 @@ params:
   math: true
   profileMode:
     enabled: true
-    title: "Team A"
-    subtitle: "Description"
+    subtitle: "We find patterns in data!"
     imageUrl: "Pattern%20Seekers%20Animation.gif"
-    imageWidth: 500 # custom size
-    imageHeight: 200 # custom size
+    imageWidth: 800 # custom size
 
 
 menu:
