@@ -1,5 +1,6 @@
 baseURL: 'ucd25-cosmos-patternseekers.github.io'
 languageCode: en-us
+title: "The Pattern Seekers"
 theme: "PaperMod"
 
 params:
@@ -9,7 +10,8 @@ params:
   math: true
   profileMode:
     enabled: true
-    subtitle: "We find patterns in data!"
+    title: "The Pattern Seekers"
+    subtitle: "Seeking your father ever since he left you"
     imageUrl: "Pattern%20Seekers%20Animation.gif"
     imageWidth: 800 # custom size
     imageHeight: 400 # custom size
