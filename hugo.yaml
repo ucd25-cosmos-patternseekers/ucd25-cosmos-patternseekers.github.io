@@ -1,6 +1,5 @@
 baseURL: 'ucd25-cosmos-patternseekers.github.io'
 languageCode: en-us
-title: "Team 5"
 theme: "PaperMod"
 
 params:
