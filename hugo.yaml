@@ -31,10 +31,7 @@ menu:
       name: Example
       url: /example/
       weight: 30
-    - identifier: okay
-      name: okay
-      url: /okay/
-      weight: 40
+
       
 markup:
   goldmark:
