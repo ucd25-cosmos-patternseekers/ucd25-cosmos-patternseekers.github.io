@@ -12,9 +12,9 @@ params:
     enabled: true
     title: "Team A"
     subtitle: "Description"
-    imageUrl: "butter.jpeg"
-    imageWidth: 120 # custom size
-    imageHeight: 120 # custom size
+    imageUrl: "Pattern%20Seekers%20Animation.gif"
+    imageWidth: 500 # custom size
+    imageHeight: 200 # custom size
 
 
 menu:
