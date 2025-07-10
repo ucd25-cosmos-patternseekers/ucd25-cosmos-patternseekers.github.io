@@ -43,7 +43,7 @@ The resulting correlation was **0.0132**. We expected a medium-strong inverse co
                    position: absolute; 
                    width: 1200px; 
                    height: 580px; 
-                   transform: scale(0.597); 
+                   transform: scale(0.7); 
                    transform-origin: 0 0;" 
             scrolling="no">
     </iframe>
