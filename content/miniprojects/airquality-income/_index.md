@@ -1,5 +1,5 @@
 ---
-title: "First Entry"
+title: "Income and Air Quality"
 date: 2025-07-09
 ---
 
