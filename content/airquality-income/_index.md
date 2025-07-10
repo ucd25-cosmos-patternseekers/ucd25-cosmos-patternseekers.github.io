@@ -26,7 +26,7 @@ After some debugging, we combined both the income and air quality dataset into o
 ## Data Modeling
 
 We used a linear regression plot to graph our data, producing the following image:
-![](graphed-correlation.png)<!-- {"width":220} -->
+![](linear-regression-plot.png)<!-- {"width":220} -->
 
 ## Outcome
 
