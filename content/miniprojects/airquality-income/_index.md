@@ -39,7 +39,4 @@ The resulting correlation was **0.0132**. We expected a medium-strong inverse co
 
 
 <<<<<<< HEAD
-<iframe src="/income_aqi_full_data.html" width="716px" height="500px" style="border:none;"></iframe>
-=======
-<iframe src="/income_aqi_full_data.html" width="716px" height="418px" style="border:none;"></iframe>
->>>>>>> f9f1bae4cd2d6eaa3d2c0fc39443eb16aebd8401
+<iframe src="/income_aqi_full_data.html" width="716px" height="400px" style="border:none;"></iframe>
