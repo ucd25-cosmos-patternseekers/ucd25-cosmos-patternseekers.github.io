@@ -121,10 +121,11 @@ Pattern Seekers Members
       Mohini Gune is ...
     </p>
     <ul style="margin: 0; padding-left: 20px;">
+      <li>From the Bay Area</li>
       <li>Interested in Financial Modeling, Data Science, and Econometrics</li>
-      <li>BBB</li>
-      <li>CCC</li>
+      <li>Enjoys listening to music</li>
     </ul>
   </div>
   
 </div>
+
