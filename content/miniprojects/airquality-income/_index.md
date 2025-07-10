@@ -66,9 +66,12 @@ The resulting correlation was **0.0132**. We expected a medium-strong inverse co
 <div style="width: 716px; height: 400px; overflow: hidden; position: relative;">
     <iframe src="/income_aqi_full_data.html" 
             style="border: none; 
+                   justify-content: center;
                    position: absolute; 
+                   width: 1200px; 
+                   height: 580px; 
+                   transform: scale(1); 
                    transform-origin: 0 0;" 
             scrolling="no">
     </iframe>
 </div>
-
