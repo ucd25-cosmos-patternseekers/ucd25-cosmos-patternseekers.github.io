@@ -1,4 +1,9 @@
-# Topic 
+---
+title: "First Entry"
+date: 2025-07-09
+---
+
+## Topic 
 
 > ***What is the correlation between air quality and wealth in the U.S.?***
 

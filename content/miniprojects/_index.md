@@ -1,1 +1,5 @@
-# Mini projects
+---
+title: Mini Projects
+---
+
+*Click these entries to view them!*
