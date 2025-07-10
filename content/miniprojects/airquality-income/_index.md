@@ -44,7 +44,7 @@ We found data on incomes for each county on the [BEA](https://www.bea.gov/data/i
       </tbody>
     </table>
   </div>
-</body>
+</body> 
 
 This would become a problem because we would need to uniquely match each entry in the *Incomes* data to entries in the *AQI* data. County names were not enough because they would frequently repeat. For example, there were *31 counties* named “Washington.” 
 
