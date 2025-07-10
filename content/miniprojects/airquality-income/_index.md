@@ -37,4 +37,14 @@ We used a linear regression plot to graph our data, producing the following imag
 
 The resulting correlation was **0.0132**. We expected a medium-strong inverse correlation, and we believe this difference was due to the fact that counties hold tens of thousands to millions of people. With such a large population, is it very possible that there exists both affulent and decrepit neighborhoods within the counties. When taking the median AQI and average income of a county, the fine details often gets lost. To produce a more accurate result, it is a good idea to use smaller units of measurement like cities or city districts for future tests.
 
-<iframe src="/income_aqi_full_data.html" width="716px" height="400px" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+<div style="width: 716px; height: 350px; overflow: hidden; position: relative;">
+    <iframe src="/income_aqi_full_data.html" 
+            style="border: none; 
+                   position: absolute; 
+                   width: 1200px; 
+                   height: 580px; 
+                   transform: scale(0.597); 
+                   transform-origin: 0 0;" 
+            scrolling="no">
+    </iframe>
+</div>
