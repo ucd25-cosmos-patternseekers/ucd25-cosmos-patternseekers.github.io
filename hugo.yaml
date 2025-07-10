@@ -23,9 +23,9 @@ menu:
       name: Members
       url: /members/
       weight: 10
-    - identifier: AQI project
-      name: AQI project
-      url: /airquality-income/
+    - identifier: Mini Projects
+      name: Mini Projects
+      url: /miniprojects/
       weight: 10
       
 
