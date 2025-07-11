@@ -70,5 +70,5 @@ After creating a weighted regression model with the weight set to the population
 
 ## Interactive Data Map
 
-<iframe src="/plotly/income_aqi.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="/plotly/income_aqi.html" width="100%" height="400px" style="border:none;" scrolling="no"></iframe>
 
