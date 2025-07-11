@@ -24,7 +24,7 @@ We found data on incomes for each county on the [BEA](https://www.bea.gov/data/i
       <thead>
       <tr>
           <th></th>
-          <th colspan="3">Average Income</th>
+          <th colspan="3">Average Income ($) </th>
         </tr>
         <tr>
           <th>Jurisdiction</th><th>2021</th><th>2022</th><th>2023</th>
