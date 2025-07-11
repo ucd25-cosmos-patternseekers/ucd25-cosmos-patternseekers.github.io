@@ -28,7 +28,7 @@ We wanted to do further analysis seeing what correlations existed between the va
 To do so, we needed to turn the string responses to *How is the cow* into numerical values. We analyzed the *sentiment* of each of the various responses using *vaderSentiment*, assigning each response a value from -1 (negative) to +1. For example, the response *“good”* revieved a value of +0.44, and *“moo”* received a value of 0 (completely neutral). Nobody attributed any negative feelings to the cow.
 
 A correlation matrix shows the strength and direction of linear relationships between pairs of variables in a dataset.
-![](output-1.png)<!-- {"width":429} -->
+![](correlation-matrix.png)<!-- {"width":429} -->
 The values in a correlation matrix range from -1 to 1, where -1 indicates a perfect negative linear relationship, 0 means no linear relationship, and 1 indicates a perfect positive linear relationship.
 
 Here’s what we found:
