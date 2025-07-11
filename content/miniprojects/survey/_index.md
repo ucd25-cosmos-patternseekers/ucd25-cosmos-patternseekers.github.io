@@ -1,4 +1,7 @@
-# Classmate survey
+---
+title: "Classmate Survey"
+date: 2025-07-11
+---
 
 ## The questions:
 We surveyed our roomates on these five questions:
