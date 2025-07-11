@@ -13,7 +13,7 @@ We compared the AQI with the annual income of people in counties across the US i
 
 ## Data Acquisition
 
-The US Envirormental Protection Agency provided annual [data](https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual) on the air quality (AQI) of hundreds of counties in the United States. This had data on the *Median AQI*, *90th Percentile AQI*, and even numbers of *Very Unhealthy Days*. We chose to use the Median AQI because it would be less affected by incidents such as wildfires, making it a better indicator of normal air quality.
+The US Environmental Protection Agency provided annual [data](https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual) on the air quality (AQI) of hundreds of counties in the United States. This had data on the *Median AQI*, *90th Percentile AQI*, and even numbers of *Very Unhealthy Days*. We chose to use the Median AQI because it would be less affected by incidents such as wildfires, making it a better indicator of normal air quality.
 
 ## Data Preprocessing
 
@@ -50,7 +50,7 @@ To solve this, we needed to create a column to specify the state of each county.
 
 Multiple team members did these cleaning steps differently. However, our resulted data ended up varying in lengths, ranging from 720 to 740 entries. This discrepency was due to county names being the name of a state, such as *Arkansas, Arkanasas*.
 
-After some debugging, we combined both the income and air quality dataset into one comphrensive file.
+After some debugging, we combined both the income and air quality datasets into one comprehensive file.
 
 ## Data Modeling
 
@@ -59,11 +59,11 @@ We used a linear regression plot to graph our data, producing the following imag
 
 ## Outcome
 
-The resulting correlation was **0.0132**. We expected a medium-strong inverse correlation, and we believe this difference was due to the fact that all counties are considered equally, even if some counties are hundreds of times more populated than others. Our outcome would be more accurate if we added more weight to the counties with more population
+The resulting correlation was **0.0132**. We expected a medium-strong inverse correlation, and we believe this difference was due to the fact that all counties are considered equally, even if some counties are hundreds of times more populated than others. Our outcome would be more accurate if we added more weight to the counties with larger populations
 
 ## Revision
 
-After creating a weighted regression model with the weight set to the populations of the counties, we produced a new graph. Along with fixing some issues earlier with the comphrensive dataset (we recovered 200 extra rows of information), our new correlation value became **-0.0878**, signifying a very weak correlation between income and median AQI. While this outcome does not fully match our orginial hypothesis of a moderate inverse relationship, it certainly was a lot closer than our first result. 
+After creating a weighted regression model with the weight set to the populations of the counties, we produced a new graph. Along with fixing some issues earlier with the comprehensive dataset (we recovered 200 extra rows of information), our new correlation value became **-0.0878**, signifying a very weak correlation between income and median AQI. While this outcome does not fully match our original hypothesis of a moderate inverse relationship, it certainly was a lot closer than our first result. 
 ![](weighted-linear-regression.png)<!-- {"width":220} -->
 
 ## Interactive Data Map
