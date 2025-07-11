@@ -66,7 +66,7 @@ The resulting correlation was **0.0132**. We expected a medium-strong inverse co
 ## Revision
 
 After creating a weighted regression model with the weight set to the populations of the counties, we produced a new graph. Along with fixing some issues earlier with the comphrensive dataset (we recovered 200 extra rows of information), our new correlation value became **-0.0878**, signifying a very weak correlation between income and median AQI. While this outcome does not fully match our orginial hypothesis of a moderate inverse relationship, it certainly was a lot closer than our first result. 
-![](weighted-linear-regression.png)<!-- {"width":220} -->
+![](weighted_regression.png)<!-- {"width":220} -->
 
 ## Interactive Data Map
 
