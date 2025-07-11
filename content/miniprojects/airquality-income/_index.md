@@ -9,7 +9,7 @@ date: 2025-07-09
 
 ## Our Hypothesis
 
-We compared the AQI with the annual income of people in counties across the US in 2023. We thought that there would be an inverse relationship between income and  air quality, since people with more economic resources have more options to live in areas with less pollution than individuals who have less finanical assets.
+We compared the AQI with the annual income of people in counties across the US in 2023. We thought that there would be a moderate inverse relationship between income and  air quality, since people with more economic resources have more options to live in areas with less pollution than individuals who have less finanical assets.
 
 ## Data Acquisition
 
@@ -57,11 +57,16 @@ After some debugging, we combined both the income and air quality dataset into o
 ## Data Modeling
 
 We used a linear regression plot to graph our data, producing the following image:
-![](linear-regression-plot.png)<!-- {"width":220} -->
+![](linear-regression-plot.png)<!-- {"width":300} -->
 
 ## Outcome
 
-The resulting correlation was **0.0132**. We expected a medium-strong inverse correlation, and we believe this difference was due to the fact that counties hold tens of thousands to millions of people. With such a large population, is it very possible that there exists both affulent and decrepit neighborhoods within the counties. When taking the median AQI and average income of a county, the fine details often gets lost. To produce a more accurate result, it is a good idea to use smaller units of measurement like cities or city districts for future tests.
+The resulting correlation was **0.0132**. We expected a medium-strong inverse correlation, and we believe this difference was due to the fact that all counties are considered equally, even if some counties are hundreds of times more populated than others. Our outcome would be more accurate if we added more weight to the counties with more population
+
+## Revision
+
+After creating a weighted regression model with the weight set to the populations of the counties, we produced a new graph. Along with fixing some issues earlier with the comphrensive dataset (we recovered 200 extra rows of information), our new correlation value became **-0.0878**, signifying a very weak correlation between income and median AQI. While this outcome does not fully match our orginial hypothesis of a moderate inverse relationship, it certainly was a lot closer than our first result. 
+![](weighted-linear-regression.png)<!-- {"width":220} -->
 
 <div style="width: 716px; height: 400px; overflow: hidden; position: relative; display: flex; justify-content: center;">
     <iframe src="/income_aqi_full_data.html" 
