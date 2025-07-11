@@ -69,9 +69,9 @@ After creating a weighted regression model with the weight set to the population
 ![](weighted-linear-regression.png)<!-- {"width":220} -->
 
 <div style="width: 716px; height: 400px; overflow: hidden; position: relative; display: flex; justify-content: center;">
-    <iframe src="/plotly/income_aqi_full_data.html" 
+    <iframe src="/plotly/income_aqi.html" 
             style="border: none; width: 100%; height: 100%;" 
             scrolling="no">
-        <p>Your browser does not support iframes. Please <a href="/income_aqi_full_data.html">click here</a> to view the content directly.</p>
+        <p>Your browser does not support iframes. Please <a href="/income_aqi.html">click here</a> to view the content directly.</p>
     </iframe>
 </div>
