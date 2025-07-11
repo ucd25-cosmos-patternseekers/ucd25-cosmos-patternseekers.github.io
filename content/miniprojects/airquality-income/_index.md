@@ -22,25 +22,23 @@ We found data on incomes for each county on the [BEA](https://www.bea.gov/data/i
   <div class="t">
     <table>
       <thead>
+      <tr>
+          <th></th>
+          <th colspan="3">Average Income</th>
+        </tr>
         <tr>
           <th>Jurisdiction</th><th>2021</th><th>2022</th><th>2023</th>
-          <th>Rank 2023</th><th>% Δ 21–22</th><th>% Δ 22–23</th><th>Rank Δ</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>United States</td><td>64,460</td><td>66,244</td><td>69,810</td><td>—</td><td>2.8</td><td>5.4</td><td>—</td></tr>
-        <tr><td><strong>Alabama</strong></td><td>50,483</td><td>51,683</td><td>54,209</td><td>—</td><td>2.4</td><td>4.9</td><td>—</td></tr>
-        <tr><td>Autauga</td><td>49,174</td><td>49,811</td><td>53,079</td><td>10</td><td>1.3</td><td>6.6</td><td>6</td></tr>
-        <tr><td>Baldwin</td><td>56,285</td><td>57,621</td><td>60,969</td><td>4</td><td>2.4</td><td>5.8</td><td>12</td></tr>
-        <tr><td>Barbour</td><td>40,954</td><td>41,031</td><td>41,531</td><td>56</td><td>0.2</td><td>1.2</td><td>58</td></tr>
-        <tr><td>Bibb</td><td>37,362</td><td>38,196</td><td>39,835</td><td>64</td><td>2.2</td><td>4.3</td><td>35</td></tr>
-        <tr><td>Blount</td><td>42,975</td><td>44,063</td><td>45,021</td><td>38</td><td>2.5</td><td>2.2</td><td>52</td></tr>
-        <tr><td>Bullock</td><td>34,068</td><td>33,429</td><td>36,061</td><td>67</td><td>-1.9</td><td>7.9</td><td>1</td></tr>
-        <tr><td>Butler</td><td>45,438</td><td>47,502</td><td>49,192</td><td>22</td><td>4.5</td><td>3.6</td><td>41</td></tr>
-        <tr><td>Calhoun</td><td>43,215</td><td>42,668</td><td>44,737</td><td>40</td><td>-1.3</td><td>4.8</td><td>25</td></tr>
-        <tr><td>Chambers</td><td>39,269</td><td>39,447</td><td>40,735</td><td>62</td><td>0.5</td><td>3.3</td><td>43</td></tr>
-        <tr><td>Cherokee</td><td>44,590</td><td>44,563</td><td>45,099</td><td>36</td><td>-0.1</td><td>1.2</td><td>59</td></tr>
-        <tr><td>Chilton</td><td>42,839</td><td>43,454</td><td>46,120</td><td>31</td><td>1.4</td><td>6.1</td><td>9</td></tr>
+        <tr><td>United States</td><td>64,460</td><td>66,244</td><td>69,810</td>
+        <tr><td><strong>Alabama</strong></td><td>50,483</td><td>51,683</td><td>54,209</td>
+        <tr><td>Autauga</td><td>49,174</td><td>49,811</td><td>53,079</td>
+        <tr><td>Baldwin</td><td>56,285</td><td>57,621</td><td>60,969</td>
+        <tr><td>Barbour</td><td>40,954</td><td>41,031</td><td>41,531</td>
+        <tr><td>Bibb</td><td>37,362</td><td>38,196</td><td>39,835</td>
+        <tr><td>Blount</td><td>42,975</td><td>44,063</td><td>45,021</td>
+        <tr><td>Bullock</td><td>34,068</td><td>33,429</td><td>36,061</td>
       </tbody>
     </table>
   </div>
