@@ -1,1 +1,1 @@
-<iframe src="plotly/all_methods_comparison.html" width="100%" height="400px" style="border:none;" scrolling="no"></iframe>
+<iframe src="/plotly/all_methods_comparison.html" width="100%" height="400px" style="border:none;" scrolling="no"></iframe>
