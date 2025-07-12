@@ -2,4 +2,4 @@
 title: Mini Projects
 ---
 
-*Click these entries to view them!*
+> *Click these entries to view them!*
