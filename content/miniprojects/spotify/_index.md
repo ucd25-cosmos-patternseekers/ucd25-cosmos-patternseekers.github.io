@@ -219,5 +219,5 @@ After fitting the model to the dataset, we used the testing dataset to evaluate 
 ```python
 preds = clf.predict(X_test)
 
-print('MAE:', mean_absolute_error(y_test, preds)) # Mean Absolute Error: 10.708293454546006
+print('MAE:', mean_absolute_error(y_test, preds))
 ```
