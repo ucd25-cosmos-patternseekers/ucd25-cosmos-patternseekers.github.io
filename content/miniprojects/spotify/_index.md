@@ -169,4 +169,10 @@ After dropping columns that had minimal correlation to popularity, since most mo
 
 Before running the model, we explored the dataset to gain deeper insights. We found that the average song popularity is 33, with a standard deviation of 22. This means that the popularity of songs in the file can widely differ from one another. Afterwards, we used various plots to explore the data further. 
 
-<iframe src="/plotly/histogram.html" width="100%" height="400px" style="border:none;" scrolling="no"></iframe>
+Histogram of song popularity:
+<iframe src="/plotly/updated_histogram.html" width="100%" height="400px" style="border:none;" scrolling="no"></iframe>
+
+Subplot of various audio features:
+![](subplot.png)<!-- {"width":300} -->
+
+As seen in the histogram, 
