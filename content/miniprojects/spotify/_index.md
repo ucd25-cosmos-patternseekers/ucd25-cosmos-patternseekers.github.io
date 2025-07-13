@@ -163,11 +163,26 @@ We used the spotify tracks [dataset](https://www.kaggle.com/datasets/maharshipan
 
 ## Data Preprocessing
 
-After dropping columns that had minimal correlation to popularity, since most models only accepted numerical inputs, we created a pipeline to impute missing values and one hot encode categorical values. We ended up using 14 features (duration_ms, explicit, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, and time_signature) to create the machine learning model. 
+After dropping columns that had minimal correlation to popularity, since most models only accepted numerical inputs, we created a pipeline to impute missing values and one hot encode categorical values. We ended up using 14 features (duration_ms, explicit, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, and time_signature) to create the machine learning model.
+
+```python
+numerical_transformer = SimpleImputer(strategy='mean')
+
+categorical_transformer = Pipeline(steps=[
+    ('imputer', SimpleImputer(strategy='most_frequent')),
+    ('onehot', OneHotEncoder(handle_unknown='ignore'))
+])
+
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('num', numerical_transformer, numerical_cols),
+        ('cat', categorical_transformer, categorical_cols)
+    ])
+```
 
 ## Exploratory Data Analysis
 
-Before running the model, we explored the dataset to gain deeper insights. We found that the average song popularity is 33.2, with a standard deviation (STD) of 22.3. This means that the popularity of songs in the file can widely differ from one another. Afterwards, we used various plots to explore the data further. 
+Before running the model, we explored the dataset to gain deeper insights. We found that the average song popularity is **33.2**, with a standard deviation (STD) of **22.3**. This means that the popularity of songs in the file can widely differ from one another. Afterwards, we used various plots to explore the data further. 
 
 Histogram of song popularity:
 <iframe src="/plotly/updated_histogram.html" width="100%" height="400px" style="border:none;" scrolling="no"></iframe>
@@ -179,8 +194,30 @@ As seen in the histogram, many songs have a very low (0-4) popularity score. We 
 
 ## Data Modeling
 
-We settled on using RandomForestRegressor as our machine learning model due to its simple parameters and general robustness with big datasets. After dropping the popularity column and setting it as the target variable, we then split the dataset into a training and testing dataset, putting 80% of the rows for training and 20% for validation. To avoid data leakage, we again used a pipeline to link the preprocessed data with the model. For our model, we used 100 trees and set random_state to 0 to ensure reproducibility. 
+We settled on using RandomForestRegressor as our machine learning model due to its simple parameters and general robustness with big datasets. After dropping the popularity column and setting it as the target variable, we then split the dataset into a training and testing dataset, putting 80% of the rows for training and 20% for validation. To avoid data leakage, we again used a pipeline to link the preprocessed data with the model. For our model, we used 100 trees and set random_state to 0 to ensure reproducibility.
+
+```python
+model = RandomForestRegressor(n_estimators=100,        
+    max_depth=None,          
+    min_samples_split=2,     
+    min_samples_leaf=1,      
+    max_features='sqrt',     
+    bootstrap=True,          
+    random_state=0)
+
+clf = Pipeline(steps=[('preprocessor', preprocessor),
+                      ('model', model)
+                     ])
+
+clf.fit(X_train, y_train)
+```
 
 ## Data Validation
 
-After fitting the model to the dataset, we used the testing dataset to evaluate our model performance. We found that the mean absolute error (MAE) of the model was 10.7. The produced MAE/STD ratio was 0.48, meaning that the model reduced the average error by around 52% compared to the strategy of guessing the mean popularity on every song. While the model is not particularly great at accurately predicting the popularity of songs, it is still noticeably better than simply guessing the popularity. Since the MAE/STD ratio is under 0.5, it is still generally considered a good model.
+After fitting the model to the dataset, we used the testing dataset to evaluate our model performance. We found that the mean absolute error (MAE) of the model was **10.7**. The produced MAE/STD ratio was **0.48**, meaning that the model reduced the average error by around **52%** compared to the strategy of guessing the mean popularity on every song. While the model is not particularly great at accurately predicting the popularity, it is still noticeably better than simply guessing the popularity. Since the MAE/STD ratio is under 0.5, it is still generally considered a good model.
+
+```python
+preds = clf.predict(X_test)
+
+print('MAE:', mean_absolute_error(y_test, preds)) # Mean Absolute Error: 10.708293454546006
+```
