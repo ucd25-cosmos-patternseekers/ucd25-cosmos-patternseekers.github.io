@@ -10,7 +10,7 @@ author: Wisdom Li
 
 ## Hypothesis
 
-By training a machine learning model through various input features, we can predict the target variable, popularity. Popularity is on a scale between 0-100, with 0 being the least popular and 100 being the most popular song.
+By training a machine learning model through various input features, we can predict the target variable, popularity. Popularity is on a scale between 0-100, with 100 being the most popular song.
 
 ## Data Acquisition
 
@@ -167,7 +167,7 @@ After dropping columns that had minimal correlation to popularity, since most mo
 
 ## Exploratory Data Analysis
 
-Before running the model, we explored the dataset to gain deeper insights. We found that the average song popularity is 33, with a standard deviation of 22. This means that the popularity of songs in the file can widely differ from one another. Afterwards, we used various plots to explore the data further. 
+Before running the model, we explored the dataset to gain deeper insights. We found that the average song popularity is 33.2, with a standard deviation (STD) of 22.3. This means that the popularity of songs in the file can widely differ from one another. Afterwards, we used various plots to explore the data further. 
 
 Histogram of song popularity:
 <iframe src="/plotly/updated_histogram.html" width="100%" height="400px" style="border:none;" scrolling="no"></iframe>
@@ -175,4 +175,12 @@ Histogram of song popularity:
 Subplot of various audio features:
 ![](subplot.png)<!-- {"width":300} -->
 
-As seen in the histogram, 
+As seen in the histogram, many songs have a very low (0-4) popularity score. We first thought that the person who made the dataset assigned a popularity score of 0 to songs where the popularity data does not exist. However, after reading through the description of the dataset, we realized that popularity was calculated using a formula that focuses mainly on how many recent plays the songs had. From this, we deduced that these songs had a very low popularity value probably because they did not have a lot of recent streams, and not due to missing data. As a result, we chose to keep these songs in the dataset.
+
+## Data Modeling
+
+We settled on using RandomForestRegressor as our machine learning model due to its simple parameters and general robustness with big datasets. After dropping the popularity column and setting it as the target variable, we then split the dataset into a training and testing dataset, putting 80% of the rows for training and 20% for validation. To avoid data leakage, we again used a pipeline to link the preprocessed data with the model. For our model, we used 100 trees and set random_state to 0 to ensure reproducibility. 
+
+## Data Validation
+
+After fitting the model to the dataset, we used the testing dataset to evaluate our model performance. We found that the mean absolute error (MAE) of the model was 10.7. The produced MAE/STD ratio was 0.48, meaning that the model reduced the average error by around 52% compared to the strategy of guessing the mean popularity on every song. While the model is not particularly great at accurately predicting the popularity of songs, it is still noticeably better than simply guessing the popularity. Since the MAE/STD ratio is under 0.5, it is still generally considered a good model.
