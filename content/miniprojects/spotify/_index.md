@@ -168,3 +168,5 @@ After dropping columns that had minimal correlation to popularity, since most mo
 ## Exploratory Data Analysis
 
 Before running the model, we explored the dataset to gain deeper insights. We found that the average song popularity is 33, with a standard deviation of 22. This means that the popularity of songs in the file can widely differ from one another. Afterwards, we used various plots to explore the data further. 
+
+<iframe src="/plotly/histogram.html" width="100%" height="400px" style="border:none;" scrolling="no"></iframe>
