@@ -1,6 +1,8 @@
 ---
 title: "Income and Air Quality"
 date: 2025-07-09
+summary: What is the correlation between air quality and wealth in the U.S.?
+author: Colin Haine + Wisdom Li
 ---
 
 ## Topic 
@@ -37,8 +39,6 @@ We found data on incomes for each county on the [BEA](https://www.bea.gov/data/i
         <tr><td>Baldwin</td><td>56,285</td><td>57,621</td><td>60,969</td>
         <tr><td>Barbour</td><td>40,954</td><td>41,031</td><td>41,531</td>
         <tr><td>Bibb</td><td>37,362</td><td>38,196</td><td>39,835</td>
-        <tr><td>Blount</td><td>42,975</td><td>44,063</td><td>45,021</td>
-        <tr><td>Bullock</td><td>34,068</td><td>33,429</td><td>36,061</td>
       </tbody>
     </table>
   </div>
