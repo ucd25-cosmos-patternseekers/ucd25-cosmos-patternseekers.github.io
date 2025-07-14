@@ -2,7 +2,7 @@
 title: "Income and Air Quality"
 date: 2025-07-09
 summary: What is the correlation between air quality and wealth in the U.S.?
-author: Colin Haine + Wisdom Li
+author: Colin Haine, Wisdom Li
 ---
 
 ## Topic 
