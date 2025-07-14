@@ -1,7 +1,8 @@
 ---
 title: "Song Popularity Analysis"
-date: 2025-07-11
+date: 2025-07-12
 author: Wisdom Li
+summary: How can we determine the popularity of a song/album given its features (duration, danceability, loudness, tempo, etc)?
 ---
 
 ## Topic
