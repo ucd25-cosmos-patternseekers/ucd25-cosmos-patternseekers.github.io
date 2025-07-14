@@ -1,6 +1,7 @@
 ---
 title: "Movie Clustering"
 date: 2025-07-11
+summary: How can we recommend movies based on similarity?
 ---
 
 > Webpage is still a WIP
