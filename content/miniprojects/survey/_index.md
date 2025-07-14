@@ -1,6 +1,8 @@
 ---
 title: "Classmate Survey"
 date: 2025-07-11
+summary: Creating surveys to discover hidden and novel insights behind the behavorial instincts of teenagers in our digital society.
+author: Colin Haine
 ---
 
 ## The questions:
