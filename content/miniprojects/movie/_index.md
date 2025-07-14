@@ -1,7 +1,8 @@
 ---
 title: "Movie Clustering"
-date: 2025-07-11
+date: 2025-07-12
 summary: How can we recommend movies based on similarity?
+author: Mohini Gune
 ---
 
 
