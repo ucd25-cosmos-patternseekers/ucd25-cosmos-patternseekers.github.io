@@ -96,12 +96,12 @@ Pattern Seekers Members
 
   <div style="flex: 1; text-align: left;">
     <p style="margin: 0; padding-top: 0.5em;">
-      Lucy Van Pelt is ...
+      Linda Meng is ...
     </p>
     <ul style="margin: 0; padding-left: 20px;">
-      <li>AAA</li>
-      <li>BBB</li>
-      <li>CCC</li>
+      <li>From Los Angeles</li>
+      <li>Interested in Social Sciences, Robotics and Computer Science</li>
+      <li>Enjoys creative writing and drawing</li>
     </ul>
   </div>
   
