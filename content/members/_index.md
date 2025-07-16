@@ -14,6 +14,9 @@ title: "Members"
 }
 </style>
 
+## About Us
+
+
 Pattern Seekers Members
 ---
 
