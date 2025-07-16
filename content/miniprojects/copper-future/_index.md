@@ -19,7 +19,7 @@ We hypothesized that copper prices in the US (COMEX) are predictable using lagge
 
 ## Data Acquisition
 
-We gathered daily price data from two main sources: the COMEX copper futures (in USD per pound) and SHFE copper futures (converted to USD per pound). These were joined into a unified dataset with aligned timestamps. The London Metal Exchange (LME) was excluded from the final prediction model due to the fact that LME data was only available monthly, while SHFE and COMEX data were daily. Since our model was trained to predict next-day prices, monthly data would not align with the daily format and would create lots of missing values or require mass interpolation.
+We gathered daily price data from two main sources: the COMEX copper futures (in USD per pound) and SHFE copper futures (converted to USD per pound). These were joined into one dataset with aligned timestamps. The London Metal Exchange (LME) was excluded from the final prediction model due to the fact that LME data was only available monthly, while SHFE and COMEX data were daily. Since our model was trained to predict next-day prices, monthly data would not align with the daily format and would create lots of missing values or require mass interpolation.
 
 
 
