@@ -93,4 +93,3 @@ Short-term momentum signals, especially the previous day’s price, were the mos
 ## Conclusion
 
 Our hypothesis was largely supported: copper prices on COMEX can be accurately forecasted using a set of lag-based features. However, we found that foreign price signals like SHFE spreads were less helpful than expected, short-term memory in price series was highly predictive. 
-
