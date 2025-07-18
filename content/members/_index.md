@@ -53,12 +53,12 @@ Pattern Seekers Members
 
   <div style="flex: 1; text-align: left;">
     <p style="margin: 0; padding-top: 0.5em;">
-      Woodstock is ...
+      Aiden is a rising senior from the Bay Area
     </p>
     <ul style="margin: 0; padding-left: 20px;">
-      <li>AAA</li>
-      <li>BBB</li>
-      <li>CCC</li>
+      <li>Enjoys playing badminton and basketball</li>
+      <li>Lives a very unproductive lifestyle</li>
+      <li>Instagram reels addict</li>
     </ul>
   </div>
 
