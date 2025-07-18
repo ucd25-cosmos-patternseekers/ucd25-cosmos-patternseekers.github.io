@@ -1,0 +1,186 @@
+
+<!-- saved from url=(0051)https://wonjun-seo.github.io/cosmos/labs/lab-recap/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><h1 id="linear-algebra-preview">Linear Algebra Preview</h1>
+
+<h2 id="a-peek-under-the-hood">A peek under the hood</h2>
+<p>Consider the linear system of equations</p>
+
+<p>$1.5x + 0.5y = 2$</p>
+
+<p>$0.2x + 1.2y = 1.2$</p>
+
+<p>If we solve this system of equations using algebraic techniques, we can trivially find that $x = 1$ and $y = 1$</p>
+
+<p>Using matrices, we can also write this system as</p>
+
+<p>$\begin{bmatrix}
+1.5 &amp; 0.5<br>
+0.2 &amp; 1.2<br>
+\end{bmatrix}$
+$\begin{bmatrix}
+x<br>
+y<br>
+\end{bmatrix}$ =
+$\begin{bmatrix}
+2<br>
+1.2<br>
+\end{bmatrix}$
+<a href="https://github.com/wonjun-seo/cosmos/tree/master/static_files/presentations/lecture_nine/visualization.ipynb">Transformation Visualization</a></p>
+
+<h2 id="motivation-why-matrices">Motivation: Why Matrices?</h2>
+
+<p>Matrix notation is visually cumbersome, and it is often difficult to understand. However, for complicated systems, it often simplifies calculations. Further, computing software such as MATLAB can help solve these systems quickly.</p>
+
+<p>Consider the Lorentz Equation (Convection Model) which can be visualized as</p>
+
+<p><img src="./Lin_Alg_files/lorenz-attractor-phase-plane-1024x393.png" alt=""></p>
+
+<p>We can write this system of ODEs as</p>
+
+<p>$
+\begin{cases}
+\frac{dx}{dt} = \sigma(y - x) <br>
+\frac{dy}{dt} = x(\rho - z) - y <br>
+\frac{dz}{dt} = xy - \beta z <br>
+x(0) = x_0, \quad y(0) = y_0, \quad z(0) = z_0
+\end{cases}
+$</p>
+
+<p>We can solve this system in matrix form as</p>
+
+<p>$\frac{d}{dt} \begin{pmatrix} x \ y \ z \end{pmatrix} = \begin{pmatrix}-\sigma &amp; \sigma &amp; 0 \\rho &amp; -1 &amp; 0 \0 &amp; 0 &amp; -\beta\end{pmatrix}\begin{pmatrix} x \ y \ z \end{pmatrix}+ \begin{pmatrix} 0 \ -xz \ xy \end{pmatrix}$</p>
+
+<p>Alternatively, the Jacobian matrix is:</p>
+
+<p>$
+J = \begin{pmatrix}
+-\sigma &amp; \sigma &amp; 0 <br>
+\rho - z &amp; -1 &amp; -x <br>
+y &amp; x &amp; -\beta
+\end{pmatrix}
+$</p>
+
+<p>Or</p>
+
+<p>$\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0}$ &amp; Gauss’s law \</p>
+
+<p>$\nabla \cdot \mathbf{B} = 0$ &amp; Gauss’s law for magnetism \</p>
+
+<p>$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$ &amp; Faraday’s law \</p>
+
+<p>$\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}$ &amp; Ampère’s law with Maxwell’s correction \</p>
+
+<p>can be written as 
+$\begin{bmatrix} \nabla \cdot \mathbf{E} \\nabla \cdot \mathbf{B} \\nabla \times \mathbf{E} \\nabla \times \mathbf{B}\end{bmatrix} =\begin{bmatrix}\frac{\rho}{\varepsilon_0} \0 \- \frac{\partial \mathbf{B}}{\partial t} \\mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+\end{bmatrix}$</p>
+
+<p>where $\nabla = \frac{\partial}{\partial x} \hat{i} +\frac{\partial}{\partial y} \hat{j} + \frac{\partial}{\partial z} \hat{k} = \begin{bmatrix} \frac{\partial}{\partial x} \ \frac{\partial}{\partial y} \ \frac{\partial}{\partial z} $</p>
+
+<p>Matrix (Linear) Algebra is a powerful tool in Data Science because it is the underlying foundation for techniques such as…</p>
+
+<h2 id="pca-principle-component-analysis">PCA (Principle Component Analysis)</h2>
+
+<p>As covered in lecture last week, PCA is a method to reduce the dimensionality of data while preserving its structure.</p>
+
+<p>Condsider the following data frame</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>GPA (UW)</th>
+      <th>SAT Score</th>
+      <th># of Submitted Applications</th>
+      <th>Acceptances</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3.9</td>
+      <td>1510</td>
+      <td>6</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4.0</td>
+      <td>1340</td>
+      <td>10</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>3.2</td>
+      <td>1590</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2.0</td>
+      <td>1220</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If we let $A$ be a $4 \times 4$ matrix composed of the Data listed above</p>
+
+<p>$A = \begin{bmatrix}
+3.9 &amp; 1510 &amp; 6 &amp; 5<br>
+4.0 &amp; 1340 &amp; 10 &amp; 7<br>
+3.2 &amp; 1590 &amp; 2 &amp; 2<br>
+2.0 &amp; 1220 &amp; 1 &amp; 1<br>
+\end{bmatrix}$</p>
+
+<p>then, If we have some projection matrix $P$</p>
+
+<p>$ P = \begin{bmatrix}
+-0.001 &amp; −0.0001<br>
+0.999 &amp; −0.004<br>
+0.003 &amp; 0.987<br>
+0.002 &amp; 0.159
+\end{bmatrix}$
+Then, the multiplication $A \times P$ yields a new  $4 \times 2 $ matrix $X$ which can be visualized in lower dimensional space.</p>
+
+<p>$X = \begin{bmatrix}
+1508.5 &amp; 0.67661<br>
+1338.7 &amp; 5.6226<br>
+1588.4 &amp; -4.0683<br>
+1218.8 &amp; -3.7342
+\end{bmatrix}$</p>
+
+<p><a href="https://github.com/wonjun-seo/cosmos/tree/master/static_files/presentations/lecture_nine/pca_visualization.ipynb">PCA Visualization</a></p>
+
+<p>For further reading on the math behind PCA, visit <a href="https://www.math.union.edu/~jaureguj/PCA.pdf">This page</a></p>
+
+<p>Finally, Least squares regression</p>
+
+\[A\mathbf{x} = \mathbf{b}\]
+
+\[\hat{\mathbf{x}} = \arg\min_{\mathbf{x}} \| A\mathbf{x} - \mathbf{b} \|^2\]
+
+\[\mathbf{r} = \mathbf{b} - A\hat{\mathbf{x}} \perp \text{Col}(A)\]
+
+\[A^\top (\mathbf{b} - A\hat{\mathbf{x}}) = 0\]
+
+\[A^\top A \hat{\mathbf{x}} = A^\top \mathbf{b}\]
+
+\[\hat{\mathbf{x}} = (A^\top A)^{-1} A^\top \mathbf{b}\]
+
+<p>An example of this in action is</p>
+
+\[A = \begin{bmatrix}
+1 &amp; 1 \\
+1 &amp; 2 \\
+1 &amp; 3
+\end{bmatrix}, \quad
+\mathbf{b} = \begin{bmatrix}
+1 \\
+2 \\
+2
+\end{bmatrix}\]
+
+\[y = 1.0 + 0.5x\]
+
+<p><a href="https://github.com/wonjun-seo/cosmos/tree/master/static_files/presentations/lecture_nine/least_squaress.ipynb">Visualization notebook</a></p>
+
+<p>For further reading on the math behind least squares regresiion, see <a href="https://textbooks.math.gatech.edu/ila/least-squares.htmls">this page</a></p>
+</body></html>
