@@ -56,7 +56,7 @@ Pattern Seekers Members
       Aiden is a rising senior from the Bay Area
     </p>
     <ul style="margin: 0; padding-left: 20px;">
-      <li>Enjoys playing badminton and basketball</li>
+      <li>Enjoys playing badminton and basketball with friends</li>
       <li>Lives a very unproductive lifestyle</li>
       <li>Instagram reels addict</li>
     </ul>
