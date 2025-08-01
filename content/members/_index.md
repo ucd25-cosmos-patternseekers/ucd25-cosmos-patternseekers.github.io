@@ -70,8 +70,8 @@ Pattern Seekers Members
 
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
-  <img src="content/members/Screenshot 2025-08-01 091638.png"
-       alt="wisdom"
+  <img src="Screenshot 2025-08-01 091638.png"
+       alt="Wisdom Li"
        style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; object-position: center; flex-shrink: 0;">
 
   <div style="flex: 1; text-align: left;">
@@ -81,7 +81,7 @@ Pattern Seekers Members
     <ul style="margin: 0; padding-left: 20px;">
       <li>A rising senior from the Bay Area</li>
       <li>Interested in exploring Data Science and Machine Learning</li>
-      <li><Enjoys watching YouTube videos/li>
+      <li>Enjoys watching YouTube videos</li>
     </ul>
   </div>
   
