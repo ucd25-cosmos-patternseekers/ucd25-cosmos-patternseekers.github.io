@@ -70,7 +70,7 @@ Pattern Seekers Members
 
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
-  <img src="Screenshot 2025-08-01 091638.png"
+  <img src="Screenshot 2025-08-01 092618.png"
        alt="Wisdom Li"
        style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; object-position: center; flex-shrink: 0;">
 
