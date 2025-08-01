@@ -58,7 +58,7 @@ Pattern Seekers Members
     <ul style="margin: 0; padding-left: 20px;">
       <li>Enjoys playing badminton and basketball with friends</li>
       <li>Lives a very unproductive lifestyle</li>
-      <li>Instagram reels addict</li>
+      <li>Puts in lots of effort</li>
     </ul>
   </div>
 
