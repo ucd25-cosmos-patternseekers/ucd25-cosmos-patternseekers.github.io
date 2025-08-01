@@ -29,7 +29,7 @@ menu:
       weight: 10
     - identifier: Project
       name: Project
-      url: /project/
+      url: https://preview--data-sci-final.lovable.app/
       weight: 10
       
 
