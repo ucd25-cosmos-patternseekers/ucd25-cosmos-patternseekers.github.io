@@ -93,18 +93,18 @@ Pattern Seekers Members
 
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
-  <img src="lucy.jpeg"
-       alt="Lucy Van Pelt"
+  <img src="Linda.jpg"
+       alt="Linda"
        style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; object-position: center; flex-shrink: 0;">
 
   <div style="flex: 1; text-align: left;">
     <p style="margin: 0; padding-top: 0.5em;">
-      Linda Meng is ...
+      Linda Meng is a rising senior from LA
     </p>
     <ul style="margin: 0; padding-left: 20px;">
-      <li>From Los Angeles</li>
       <li>Interested in Social Sciences, Robotics and Computer Science</li>
       <li>Enjoys creative writing and drawing</li>
+      <li>Orders boba every day</li>
     </ul>
   </div>
   
