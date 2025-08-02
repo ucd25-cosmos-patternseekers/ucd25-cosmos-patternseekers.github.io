@@ -115,7 +115,7 @@ Pattern Seekers Members
 ## Mohini Gune
 <div class="member-block" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
 
-  <img src="sally.jpeg"
+  <img src="mohini.png"
        alt="Sally Brown"
        style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; object-position: center; flex-shrink: 0;">
 
